@@ -1,0 +1,11 @@
+*.metadata/
+*.recommenders/
+*./straining/test-output
+*./wstraining/.settings
+*./wstraining/.settings
+*./wstraining/.classpath
+*./wstraining/.project
+*./.metadata/.plugins/
+*./wstraining/bin
+*./wstraining/test-output
+
