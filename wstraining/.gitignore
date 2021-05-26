@@ -1,1 +1,6 @@
+*.class
+*.classpath
 /target/
+/test-output/
+/src/.sonar/
+/bin/

@@ -35,6 +35,7 @@ public class GetBoardWithValidation {
 				body("id", equalTo("60ab8ac20cf3a5522f745ba9")).
 			and().
 				body("name", equalTo("myAutomationBoard"));
+
 	
 	}
 	
@@ -62,4 +63,127 @@ public class GetBoardWithValidation {
 				body("name", equalTo("myAutomationBoard"));
 	
 	}
+	
+	@Test
+	public void validateBodyInArray()
+	{
+		RestAssured.baseURI = baseurl;
+		given().
+			param("key", key).
+			param("token", token).
+		when().
+			get("/1/boards/nmnGejy8"). 
+		then(). 
+			assertThat().statusCode(200).
+			and(). 
+				contentType(ContentType.JSON). 
+			and().
+				body("id", equalTo("60ab8ac20cf3a5522f745ba9")).
+			and().
+				body("name", equalTo("myAutomationBoard")).
+				body("prefs.backgroundImageScaled[0].width",equalTo(140));
+	
+	}
+	
+	@Test
+	public void validateBodyMultipleValuesInArray()
+	{
+		RestAssured.baseURI = baseurl;
+		given().
+			param("key", key).
+			param("token", token).
+		when().
+			get("/1/boards/nmnGejy8"). 
+		then(). 
+			assertThat().statusCode(200).
+			and(). 
+				contentType(ContentType.JSON). 
+			and().
+				body("id", equalTo("60ab8ac20cf3a5522f745ba9")).
+			and().
+				body("name", equalTo("myAutomationBoard")).
+				body("prefs.backgroundImageScaled.width",hasItems(140, 256, 480, 960, 1024, 2048, 1280, 1920, 2397, 2560));
+	
+	}
+	
+	@Test
+	public void validateKeyExists()
+	{
+		RestAssured.baseURI = baseurl;
+		given().
+			param("key", key).
+			param("token", token).
+		when().
+			get("/1/boards/nmnGejy8"). 
+		then(). 
+			assertThat().statusCode(200).
+			and(). 
+				contentType(ContentType.JSON). 
+			and().
+				body("id", equalTo("60ab8ac20cf3a5522f745ba9")).
+			and().
+				body("name", equalTo("myAutomationBoard")).
+				body("prefs.backgroundImageScaled[0]",hasKey("width")).and().
+				body("prefs.backgroundImageScaled[0]",hasKey("height")).and().
+				body("prefs.backgroundImageScaled[0]",hasKey("url"));
+	
+	}
+	
+	@Test
+	public void validateSizeArray()
+	{
+		RestAssured.baseURI = baseurl;
+		given().
+			param("key", key).
+			param("token", token).
+		when().
+			get("/1/boards/nmnGejy8"). 
+		then(). 
+			assertThat().statusCode(200).
+			and(). 
+				contentType(ContentType.JSON). 
+			and().
+				body("id", equalTo("60ab8ac20cf3a5522f745ba9")).
+			and().
+				body("name", equalTo("myAutomationBoard")).
+				body("prefs.backgroundImageScaled[0]",hasKey("width")).and().
+				body("prefs.backgroundImageScaled[0]",hasKey("height")).and().
+				body("prefs.backgroundImageScaled[0]",hasKey("url")).and().
+				body("prefs.backgroundImageScaled.size",equalTo(10));
+	
+	}
+	
+	@Test
+	public void validatePartiularValue()
+	{
+		RestAssured.baseURI = baseurl;
+		given().
+			param("key", key).
+			param("token", token).
+		when().
+			get("/1/boards/nmnGejy8"). 
+		then(). 
+			assertThat().statusCode(200).
+			and(). 
+			body("prefs.backgroundImageScaled.findAll{it.width==1024}",hasItem(hasEntry("width", 1024)));
+	
+	}
+	
+	@Test
+	public void validateMultiplseAssertions()
+	{
+		RestAssured.baseURI = baseurl;
+		given().
+			param("key", key).
+			param("token", token).
+		when().
+			get("/1/boards/nmnGejy8"). 
+		then(). 
+			assertThat().statusCode(200).
+			and(). 
+			body("prefs.backgroundImageScaled.size",equalTo(10));
+	
+	}
+	
+	
 }
