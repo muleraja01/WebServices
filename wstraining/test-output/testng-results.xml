@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8537" started-at="2021-05-26T04:28:58Z" finished-at="2021-05-26T04:29:06Z">
+  <suite name="Default suite" duration-ms="4436" started-at="2021-05-26T06:41:27Z" finished-at="2021-05-26T06:41:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8537" started-at="2021-05-26T04:28:58Z" finished-at="2021-05-26T04:29:06Z">
-      <class name="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation">
-        <test-method status="PASS" signature="validateBodyInArray()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validateBodyInArray" duration-ms="4403" started-at="2021-05-26T04:28:58Z" finished-at="2021-05-26T04:29:02Z">
+    <test name="Default test" duration-ms="4436" started-at="2021-05-26T06:41:27Z" finished-at="2021-05-26T06:41:32Z">
+      <class name="com.synechron.ws.wstraining.basics.response.ValidateReponseDemo">
+        <test-method status="PASS" signature="createValidateResponseTest()[pri:0, instance:com.synechron.ws.wstraining.basics.response.ValidateReponseDemo@4ddced80]" name="createValidateResponseTest" duration-ms="4039" started-at="2021-05-26T06:41:27Z" finished-at="2021-05-26T06:41:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateBodyInArray -->
-        <test-method status="PASS" signature="validateBodyInGet()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validateBodyInGet" duration-ms="638" started-at="2021-05-26T04:29:02Z" finished-at="2021-05-26T04:29:03Z">
+        </test-method> <!-- createValidateResponseTest -->
+        <test-method status="PASS" signature="getHeightWithConditionTest()[pri:0, instance:com.synechron.ws.wstraining.basics.response.ValidateReponseDemo@4ddced80]" name="getHeightWithConditionTest" duration-ms="125" started-at="2021-05-26T06:41:32Z" depends-on-methods="com.synechron.ws.wstraining.basics.response.ValidateReponseDemo.createValidateResponseTest" finished-at="2021-05-26T06:41:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateBodyInGet -->
-        <test-method status="PASS" signature="validateBodyMultipleValuesInArray()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validateBodyMultipleValuesInArray" duration-ms="751" started-at="2021-05-26T04:29:03Z" finished-at="2021-05-26T04:29:03Z">
+        </test-method> <!-- getHeightWithConditionTest -->
+        <test-method status="PASS" signature="getNodeWithConditionTest()[pri:0, instance:com.synechron.ws.wstraining.basics.response.ValidateReponseDemo@4ddced80]" name="getNodeWithConditionTest" duration-ms="37" started-at="2021-05-26T06:41:32Z" depends-on-methods="com.synechron.ws.wstraining.basics.response.ValidateReponseDemo.createValidateResponseTest" finished-at="2021-05-26T06:41:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateBodyMultipleValuesInArray -->
-        <test-method status="PASS" signature="validateKeyExists()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validateKeyExists" duration-ms="670" started-at="2021-05-26T04:29:03Z" finished-at="2021-05-26T04:29:04Z">
+        </test-method> <!-- getNodeWithConditionTest -->
+        <test-method status="PASS" signature="getNodeWithMaxWithConditionTest()[pri:0, instance:com.synechron.ws.wstraining.basics.response.ValidateReponseDemo@4ddced80]" name="getNodeWithMaxWithConditionTest" duration-ms="82" started-at="2021-05-26T06:41:32Z" depends-on-methods="com.synechron.ws.wstraining.basics.response.ValidateReponseDemo.createValidateResponseTest" finished-at="2021-05-26T06:41:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateKeyExists -->
-        <test-method status="PASS" signature="validatePartiularValue()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validatePartiularValue" duration-ms="661" started-at="2021-05-26T04:29:04Z" finished-at="2021-05-26T04:29:05Z">
+        </test-method> <!-- getNodeWithMaxWithConditionTest -->
+        <test-method status="PASS" signature="getNodeWithMinUrlWithConditionTest()[pri:0, instance:com.synechron.ws.wstraining.basics.response.ValidateReponseDemo@4ddced80]" name="getNodeWithMinUrlWithConditionTest" duration-ms="51" started-at="2021-05-26T06:41:32Z" depends-on-methods="com.synechron.ws.wstraining.basics.response.ValidateReponseDemo.createValidateResponseTest" finished-at="2021-05-26T06:41:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatePartiularValue -->
-        <test-method status="PASS" signature="validateResponseHeaderInGet()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validateResponseHeaderInGet" duration-ms="651" started-at="2021-05-26T04:29:05Z" finished-at="2021-05-26T04:29:05Z">
+        </test-method> <!-- getNodeWithMinUrlWithConditionTest -->
+        <test-method status="PASS" signature="getURLWithConditionTest()[pri:0, instance:com.synechron.ws.wstraining.basics.response.ValidateReponseDemo@4ddced80]" name="getURLWithConditionTest" duration-ms="38" started-at="2021-05-26T06:41:32Z" depends-on-methods="com.synechron.ws.wstraining.basics.response.ValidateReponseDemo.createValidateResponseTest" finished-at="2021-05-26T06:41:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateResponseHeaderInGet -->
-        <test-method status="PASS" signature="validateSizeArray()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validateSizeArray" duration-ms="676" started-at="2021-05-26T04:29:05Z" finished-at="2021-05-26T04:29:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateSizeArray -->
-      </class> <!-- com.synechron.ws.wstraining.basics.get.GetBoardWithValidation -->
+        </test-method> <!-- getURLWithConditionTest -->
+      </class> <!-- com.synechron.ws.wstraining.basics.response.ValidateReponseDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

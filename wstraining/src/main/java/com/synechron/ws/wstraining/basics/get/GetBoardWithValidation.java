@@ -181,7 +181,11 @@ public class GetBoardWithValidation {
 		then(). 
 			assertThat().statusCode(200).
 			and(). 
-			body("prefs.backgroundImageScaled.size",equalTo(10));
+			body("prefs.backgroundImageScaled.size()",equalTo(10)).
+			body("prefs.backgroundImageScaled.size()", greaterThan(5)). 
+			body("prefs.backgroundImageScaled.size()", lessThan(11)). 
+			body("prefs.backgroundImageScaled.size()", greaterThanOrEqualTo(10)). 
+			body("prefs.backgroundImageScaled.size()", lessThanOrEqualTo(10)); ;
 	
 	}
 	
