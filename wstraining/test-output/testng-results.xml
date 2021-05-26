@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5370" started-at="2021-05-26T01:44:12Z" finished-at="2021-05-26T01:44:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5370" started-at="2021-05-26T01:44:12Z" finished-at="2021-05-26T01:44:18Z">
+      <class name="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation">
+        <test-method status="PASS" signature="validateBodyInGet()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validateBodyInGet" duration-ms="4723" started-at="2021-05-26T01:44:12Z" finished-at="2021-05-26T01:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBodyInGet -->
+        <test-method status="PASS" signature="validateResponseHeaderInGet()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@4ddced80]" name="validateResponseHeaderInGet" duration-ms="589" started-at="2021-05-26T01:44:17Z" finished-at="2021-05-26T01:44:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseHeaderInGet -->
+      </class> <!-- com.synechron.ws.wstraining.basics.get.GetBoardWithValidation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
