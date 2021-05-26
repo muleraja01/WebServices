@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.synechron.ws.wstraining.basics.response.ValidateReponseDemo">
+      <class name="com.synechron.ws.wstraining.basics.response.JayWayDemo">
         <methods>
-          <include name="createValidateResponseTest"/>
-          <include name="getHeightWithConditionTest"/>
+          <include name="getID"/>
+          <include name="createValidateResponseUsingJayway"/>
         </methods>
-      </class> <!-- com.synechron.ws.wstraining.basics.response.ValidateReponseDemo -->
+      </class> <!-- com.synechron.ws.wstraining.basics.response.JayWayDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
